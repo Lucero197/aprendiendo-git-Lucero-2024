@@ -1,0 +1,8 @@
+.page-title {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
