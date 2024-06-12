@@ -6,3 +6,11 @@
     margin-top: 50px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
+
+img {
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
