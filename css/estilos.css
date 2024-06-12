@@ -35,7 +35,7 @@ p {
 }
 
 /* Ocultar el checkbox */
-#mostrarVideo {
+.checkbox-hidden {
     display: none;
 }
 
@@ -46,23 +46,11 @@ p {
     width: 560px;
     height: 315px;
     overflow: hidden;
-    position: relative;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease; /* Transición de fade-in */
 }
 
-/* Estilo del iframe de video */
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* Mostrar el iframe cuando el checkbox está marcado */
-#mostrarVideo:checked + .button-label + .video-container iframe {
+/* Mostrar el contenedor de video cuando el checkbox está marcado */
+#mostrarVideo:checked + .button-label + .video-container {
     opacity: 1;
-    pointer-events: auto;
 }
